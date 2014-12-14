@@ -5,3 +5,7 @@
 /*/*/.DS_store
 /*/.DS_store
 .DS_store
+
+modernizr/
+video-js/
+hammer/
