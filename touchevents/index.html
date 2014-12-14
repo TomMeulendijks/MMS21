@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Touch events</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="block1"></div>
+		<div class="block2"></div>
+	</div>
+	<script>
+
+	function app(){
+		var blocks = document.getElementsByTagName('div');
+
+		blocks[0].addEventListener('click', function(e){
+			changeColorsOftouchedElement(e.target);
+			e.preventDefault();
+		});
+
+		blocks[1].addEventListener('touchstart', function(e){
+			changeColorsOftouchedElement(e.target);
+			e.preventDefault();
+		});
+
+		console.log(blocks);
+	}
+
+	function changeColorsOftouchedElement(element){
+		
+		var r = getRandomInt(0, 255);
+	    var g = getRandomInt(0, 255);
+	    var b = getRandomInt(0, 255);
+
+	    element.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+
+	}
+
+	function getRandomInt(min, max) {
+	  return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
+	window.onload = app;
+
+	</script>
+</body>
+</html>

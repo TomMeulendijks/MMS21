@@ -1,0 +1,32 @@
+* {margin:0px; padding:0px;}
+*, *:before, *:after {
+   -moz-box-sizing:    border-box;  
+   -webkit-box-sizing: border-box; 
+    box-sizing:        border-box; 
+
+}
+
+body {font-family: "Helvetica"}
+
+#scene1 {background: #444; position: relative; background: url(../images/neverending.gif); background-size: cover;}
+#scene1 h1{ color: #fff; text-align: center; position: absolute; top:50%; margin-top: -17px; width: 100%;}
+
+#scene2 {background: #112233; color: #fff; position: relative;}
+#scene2 h1 {text-align: center; padding-top: 20px;}
+
+#scene2 .text-1 {position: absolute; top: 200px; left: 200px; -webkit-transform: translateX(-500px);transform: translateX(-500px); -webkit-transition: all 1s;transition: all 1s;}
+#scene2 .text-2 {position: absolute; top: 200px; right: 200px; -webkit-transform: translateX(500px); transform: translateX(500px);-webkit-transition: all 1s;transition: all 1s;}
+#scene2 .text-3	{position: absolute; bottom: 30px; -webkit-transform: translateY(100px);transform: translateY(100px); -webkit-transition: all 1s;transition: all 1s; width: 100%;}
+#scene2 .text-3	a {color: #fff; width:200px; border: 2px solid #fff;  margin:0 auto; display: block; text-align: center; padding:10px 20px; text-decoration: none;}
+#scene2 .slide-in-from-side	{-webkit-transform: translateX(0px); transform: translateX(0px);}
+#scene2 .slide-in-from-bottom	{-webkit-transform: translateX(0px); transform: translateX(0px);}
+
+#scene3 {background: #332211; color: #fff; position: relative;}
+#scene3 h1 {text-align: center; padding-top: 20px;}
+#scene3 .text-3	a {color: #fff; width:200px; border: 2px solid #fff;  margin:0 auto; display: block; text-align: center; padding:10px 20px; text-decoration: none;}
+#scene3 .text-3	{position: absolute; bottom: 30px; 
+-webkit-transform: translateY(100px); -webkit-transition: all 1s; width: 100%;
+transform: translateY(100px); transition: all 1s; width: 100%;
+}
+#scene3 .slide-in-from-bottom	{-webkit-transform: translateX(0px); transform: translateX(0px);}
+#scene3 .video-js { position: absolute; top:50%; left: 50%; margin-top: -132px; margin-left: -320px;}

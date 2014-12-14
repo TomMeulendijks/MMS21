@@ -1,0 +1,11 @@
+* {margin:0px; padding:0px;}
+*, *:before, *:after {
+   -moz-box-sizing:    border-box;  
+   -webkit-box-sizing: border-box; 
+    box-sizing:        border-box; 
+
+}
+
+.container {position: absolute; top:50%; margin-top: -75px; left: 50%; margin-left: -190px;}
+.container div {width:150px; height: 150px; float: left; background: #123456;}
+.container div.block1 {margin-right: 30px;}
