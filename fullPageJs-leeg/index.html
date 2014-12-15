@@ -3,35 +3,64 @@
 <head>
 	<meta charset="UTF-8">
 	<title>FullPageJS Demo</title>
-<!--
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/video-js.css">
-	<link rel="stylesheet" href="css/style.css">
--->
+	<link rel="stylesheet" href="css/style.css">  
+
 
 </head>
 <body>
-	
+<a href="" id="menuOpener">Open menu</a>
+<!-- emmet.io -->
+<nav id="menu">
+	<ul>
+		<li><a href="">link 1</a></li>
+		<li><a href="">link 2</a></li>
+		<li><a href="">link 3</a></li>
+		<li><a href="">link 4</a></li>
+	</ul>
+</nav>
 	<div id="fullpage">
 
 		<section class="scene" id="scene1">
 			<h1>Welcome to fullPageJS</h1>
 		</section>
-
+			<section class="scene" id="scene2">
+			<h1>Mijn eerste te gekke verhaal scene!</h1>
+			<p class="text-1">Met wat text dat later komt!</p>
+			<p class="text-2">Met wat text dat later komt!</p>
+			<p class="text-3"><a href="" class="move-on-link">Move on</a></p>
+		</section>
+		<section class="scene" id="scene3">
+			<h1>Watch this video!</h1>
+			<div>
+				<video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264"
+      poster="http://video-js.zencoder.com/oceans-clip.png"
+      data-setup="{}">
+    <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+  </video>
+			</div>
+			<p class="text-3"><a class="home-link" href="">Go home</a></p>
+		</section>
+	
 	</div>
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+	
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-<!--
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/base.js"></script>
--->
-
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/video.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+	 <script type="text/javascript" src="js/base.js"></script>
+	  <script type="text/javascript" src="js/scenes/scene1.js"></script>
+	  	  <script type="text/javascript" src="js/scenes/scene2.js"></script>
+	  	  <script type="text/javascript" src="js/scenes/scene3.js"></script>
 </body>
 </html>

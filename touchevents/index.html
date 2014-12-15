@@ -13,6 +13,10 @@
 	</section>
 	<script>
 
+	var USERTRIGGER = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
+
+	alert(USERTRIGGER); 
+
 	function app(){
 		var blocks = document.getElementsByTagName('div');
 
